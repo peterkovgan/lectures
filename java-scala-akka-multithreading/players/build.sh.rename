@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Set Your Java 8 JDK and Maven Home"
+
+sleep 10
+
+export MAVEN_HOME=/maven3
+
+export JAVA_HOME=/home/user/java
+
+export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
+
+mvn clean package
+
+echo "find jar with dependencies in target"
+
+sleep 10
+

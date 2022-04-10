@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Set Your Java 8 Home"
+
+sleep 10
+
+export JAVA_HOME=/home/user/java
+
+export PATH=$JAVA_HOME/bin:$PATH
+
+java -jar ./target/players-1.0-SNAPSHOT-jar-with-dependencies.jar INITIATOR 1234
+
+sleep 10
